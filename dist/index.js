@@ -26,18 +26,15 @@ var _reactTimerMixin = require('react-timer-mixin');
 
 var _reactTimerMixin2 = _interopRequireDefault(_reactTimerMixin);
 
-var _Dimensions = require('Dimensions');
-
-var _Dimensions2 = _interopRequireDefault(_Dimensions);
-
-var _Dimensions$get = _Dimensions2['default'].get('window');
+var {
+  Dimensions
+} = _reactNative;
+var {width, height} = Dimensions.get('window');
 
 /**
  * Default styles
  * @type {StyleSheetPropType}
  */
-var width = _Dimensions$get.width;
-var height = _Dimensions$get.height;
 var styles = _reactNative.StyleSheet.create({
   container: {
     backgroundColor: 'transparent',
